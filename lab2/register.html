@@ -10,6 +10,15 @@
     a:hover {
         TEXT-DECORATION: underline
     }</style>
+    <script type="text/javascript">
+        function enable() {
+            document.getElementById("accept").disabled = false
+        }
+
+        function disable() {
+            document.getElementById("accept").disabled = true
+        }
+    </script>
 </head>
 <body>
 <header>
@@ -56,7 +65,7 @@
         <p>
             输入答案<br>
             residue of 1/(z^2+4)^2 at z=2i<br>
-            <input type="text" name="captcha" required>
+            <input type="text" name="captcha" pattern="undefined" required>
             <input type="button" name="refresh" value="刷新">
         </p>
         <p>
@@ -90,10 +99,10 @@
 知乎有权对用户使用知乎的情况进行审查和监督，如用户在使用知乎时违反任何上述规定，知乎或其授权的人有权要求用户改正或直接采取一切必要的措施（包括但不限于更改或删除用户张贴的内容、暂停或终止用户使用知乎的权利）以减轻用户不当行为造成的影响。
         </textarea>
         <br>
-        <input type="radio" value="agree" name="agree" required>同意
-        <input type="radio" value="disagree" name="agree" required>不同意
+        <input type="radio" value="agree" name="agree" onclick="if(this.checked) {enable()} else {disable()}" required>同意
+        <input type="radio" value="disagree" name="agree" onclick="if(!this.checked) {enable()} else {disable()}" required>不同意
         <p>
-            <input type="submit" value="注册" name="register">
+            <input type="submit" value="注册" name="register" id="accept" disabled="true">
         </p>
     </form>
 </section>
