@@ -1,0 +1,118 @@
+body {
+    background: rgb(244, 244, 244)
+}
+
+header {
+    background: white;
+    box-shadow: 0px 2px 5px #888888;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+}
+
+section {
+    background: white;
+
+    border-top-style: solid;
+    border-top-width: 50px;
+    border-top-color: white;
+
+    border-left-style: double;
+    border-left-width: 4px;
+    border-left-color: rgb(222, 230, 244);
+
+    border-right-style: double;
+    border-right-width: 4px;
+    border-right-color: rgb(222, 230, 244);
+
+    border-bottom-style: double;
+    border-bottom-width: 4px;
+    border-bottom-color: rgba(244, 154, 146, 0.5);
+
+    margin-bottom: 14%;
+    margin-left: 24%;
+    margin-right: 24%;
+}
+
+article {
+    box-shadow: 0px 1px 5px #0b6588;
+    margin: 23px;
+}
+
+h3 {
+    font-family: "Arial Hebrew", "sans-serif";
+    font-size: x-large;
+    font-weight: bolder;
+    line-height: 60px;
+}
+
+h5 {
+    color: rgba(81, 81, 81, 0.8);
+    font-family: "Arial", "SansSerif", "sans-serif";
+    font-weight: lighter;
+    line-height: 30px;
+}
+
+h5 + * {
+    color: rgba(9, 16, 55, 0.77);
+    font-family: "Al Tarikh", "sans-serif";
+    line-height: 25px;
+    margin: 20px;
+}
+
+blockquote {
+    color: rgba(255, 14, 5, 0.64);
+    font-size: x-small;
+}
+
+ol li {
+    margin-bottom: 50px;
+    border-bottom-style: dashed;
+    border-bottom-color: rgba(201, 201, 201, 0.76);
+    border-bottom-width: 2px;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: #64fcff;
+}
+
+
+aside {
+    background-color: rgba(179, 212, 252, 0.35);
+    line-height: 50px;
+    font-family: "Times New Roman", "serif";
+    font-size: large;
+    float: right;
+    position: fixed;
+    top: 59%;
+    left: 54%;
+    border-style: groove;
+    border-width: 5px;
+    border-color: rgba(192, 192, 192, 0.38);
+    margin-left: 28%;
+    padding: 15px;
+}
+
+
+aside a {
+    text-decoration: none;
+    color: #2eceff;
+}
+
+a:hover {
+    color: darkmagenta;
+}
+
+#pages {
+    text-align: center;
+}
+
+#current\ page {
+    color: rgb(37, 113, 203);
+}
+
+.more {
+    color: aqua;
+}
