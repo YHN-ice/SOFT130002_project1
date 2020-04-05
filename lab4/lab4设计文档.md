@@ -9,4 +9,4 @@ Lab4设计文档
 
 ----
 ####示例截图
-![sample](images/sample.png)
+![sample](images/MySample.png)
